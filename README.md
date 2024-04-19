@@ -9,3 +9,7 @@ Go has a concept of zero value. When a variable is declared, it is assigned a ze
 - false for the boolean type
 - "" for strings
 - nil for interfaces, slices, channels, maps, pointers and functions
+
+## Capacity and Length
+- Capacity is the total number of elements that can be stored in the slice.
+- Length is the number of elements that are currently stored in the slice.

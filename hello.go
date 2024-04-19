@@ -47,6 +47,25 @@ func main() {
 	slice5[0] = 200
 	fmt.Println(slice3)
 	fmt.Println(slice5)
+	// maps
+	var m = map[string]int{}
+	m["one"] = 1
+	m["two"] = 2
+	fmt.Println(m)
+	fmt.Println(m["one"])
+	v, ok := m["three"]
+	fmt.Println(v, ok)
+	// delete from map
+	delete(m, "one")
+	fmt.Println(m)
+
+	// structs
+	type person struct {
+		name string
+		age  int
+	}
+	p := person{name: "Hassan", age: 25}
+	fmt.Println(p)
 
 	fmt.Println(flag)
 	fmt.Println(greetings)

@@ -109,4 +109,29 @@ func main() {
 		fmt.Println("n is less than 0")
 	}
 
+	// for loop
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+		if i%2 == 0 {
+			continue
+		}
+	}
+
+	for {
+		fmt.Println("Infinite loop")
+		break
+	}
+
+	// for range
+	s := []int{1, 2, 3}
+	for i, v := range s {
+		fmt.Println(i, v)
+	}
+
+	// iterate over map
+	mm := map[string]int{"one": 1, "two": 2}
+	for k, v := range mm {
+		fmt.Println(k, v)
+	}
+
 }

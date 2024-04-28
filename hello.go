@@ -134,4 +134,29 @@ func main() {
 		fmt.Println(k, v)
 	}
 
+	// switch case fizzbuzz
+	for i := 1; i <= 100; i++ {
+		switch {
+		case i%3 == 0 && i%5 == 0:
+			fmt.Println("FizzBuzz")
+		case i%3 == 0:
+			fmt.Println("Fizz")
+		case i%5 == 0:
+			fmt.Println("Buzz")
+		default:
+			fmt.Println(i)
+
+		}
+	}
+
+	// switch with variable declared.
+	switch n := rand.Intn(10); {
+	case n == 0:
+		fmt.Println("n is 0")
+	case n > 0:
+		fmt.Println("n is greater than 0")
+	default:
+		fmt.Println("n is less than 0")
+	}
+
 }

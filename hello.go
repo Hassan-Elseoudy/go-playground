@@ -65,8 +65,26 @@ func main() {
 		age  int
 	}
 	p := person{name: "Hassan", age: 25}
+	p.name = "Semsemawy"
 	fmt.Println(p)
+
+	// for loop to calculate 2^1 until 2^30 and sum them
+	sum := 0
+	for i := 0; i < 30; i++ {
+		sum += 1 << i
+		fmt.Println(1 << i)
+	}
+	fmt.Println(sum)
 
 	fmt.Println(flag)
 	fmt.Println(greetings)
+
+	// example 4-1. Shadowing variables
+	va := 10
+	if va > 5 {
+		fmt.Println(va)
+		va := 5
+		fmt.Println(va)
+	}
+	fmt.Println(va)
 }

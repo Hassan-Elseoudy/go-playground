@@ -160,3 +160,12 @@ func main() {
 	}
 
 }
+
+// division function
+
+func division(num, den int) (int, error) {
+	if den == 0 {
+		return 0, fmt.Errorf("division by zero")
+	}
+	return num / den, nil
+}

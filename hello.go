@@ -87,4 +87,12 @@ func main() {
 		fmt.Println(va)
 	}
 	fmt.Println(va)
+
+	// example 4-2. Shadowing with multiple variables
+	vb := 10
+	if vb > 5 {
+		vb, vc := 5, 20
+		fmt.Println(vb, vc)
+	}
+	fmt.Println(vb)
 }

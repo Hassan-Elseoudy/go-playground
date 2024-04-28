@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	var greetings = `Greetings and
@@ -95,4 +98,15 @@ func main() {
 		fmt.Println(vb, vc)
 	}
 	fmt.Println(vb)
+
+	// example 4-5 if and else
+	n := rand.Intn(10)
+	if n == 0 {
+		fmt.Println("n is 0")
+	} else if n > 0 {
+		fmt.Println("n is greater than 0")
+	} else {
+		fmt.Println("n is less than 0")
+	}
+
 }
